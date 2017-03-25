@@ -1,5 +1,5 @@
 # react-native-xfei
-讯飞RN组件
+讯飞RN组件 use for android and ios
 Android manually configure(you change the xunfei id，need to use your iflyMSC.sdk）
 
 1.android/setting.pradle     add include ':react-native-xfei'
