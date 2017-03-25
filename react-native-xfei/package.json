@@ -1,0 +1,19 @@
+{
+  "name": "react-native-xfei",
+  "version": "1.0.0",
+  "description": "xunfei rn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "{\"type\":\"git\",\"url\":\"https://github.com/pj0579/react-native-xfei.git}\""
+  },
+  "keywords": [
+    "RN",
+    "Xunfei"
+  ],
+  "author": "xu",
+  "license": "ISC"
+}
