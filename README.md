@@ -13,7 +13,11 @@ project(':react-native-xfei').projectDir = new File(rootProject.projectDir, '../
  `add dependencies {   compile project(':react-native-xfei')`
 
 3.mainActivity add <br/>
-`@Override protected void onCreate(Bundle savedInstanceState) {   super.onCreate(savedInstanceState);     SpeechUtility.createUtility(this, SpeechConstant.APPID +"=58c77ca8");mainApplication add new XfeiPackage()}`
+` ``
+@Override protected void onCreate(Bundle savedInstanceState) {   super.onCreate(savedInstanceState);     SpeechUtility.
+` ``
+createUtility(this, SpeechConstant.APPID +"=58c77ca8");mainApplication add new XfeiPackage()}
+` ``
 
 4.move react-native-xfei to node_modules <br/>
 
@@ -22,8 +26,8 @@ project(':react-native-xfei').projectDir = new File(rootProject.projectDir, '../
 
 start<br/>  
 `Xfei.setParameter("60000", "zh_cn", "10000", "10000", "mandarin", "iat");//setParameter
-Xfei.startRecord((msg) => {       alert(msg);//sucess   },   (mag) => {        alert(mag);   });`
-end<br/>
+Xfei.startRecord((msg) => {       alert(msg);//sucess   },   (mag) => {        alert(mag);   });`<br/>
+end <br/>
 `Xfei.stopRecord()`
 
 
@@ -39,12 +43,19 @@ add Contacts.framework ,AddressBook.framework`
 `add $(SRCROOT)/../node_modules/react-native-xfei/ios`
 
 3.AppDelegate.m <br/>
-` `` add #import "RCTXfei.h"
+` `` 
+add #import "RCTXfei.h"
+` `` 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions<br/>
+` `` 
 {
+	` `` 
 …
+` `` 
 [RCTXfei crateMyUtility:@"58c90a6b"];
+` `` 
 …
+` `` 
 }
 ` `` 
 <br/>
@@ -52,9 +63,13 @@ add Contacts.framework ,AddressBook.framework`
 `RCTXfei.xcodeproj ` 
 
 5.TARGETS -Build Phases -Link binary With Libraries<br/>
-`add RCTXfei.a`
+` ``
+add RCTXfei.a
+` ``
 6.js same as Android <br/>
-`different Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }});`
+` ``
+different Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }})
+` ``
 
 
 
