@@ -1,17 +1,19 @@
 react-native-xfei
 ====   
-讯飞RN组件 use for android and ios
-Android manually configure(you change the xunfei id，need to use your iflyMSC.sdk）
+use for android and ios <br/>
+Android manually configure(you change the xunfei id，need to use your iflyMSC.sdk）<br/>
 
-1.android/setting.pradle     add include ':react-native-xfei'
-project(':react-native-xfei').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-xfei/android')
+Installation
+-------
+1.android/setting.pradle<br/>
+`add include ':react-native-xfei'
+project(':react-native-xfei').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-xfei/android')`
 
-2.android/app/build.gradle   add dependencies {   compile project(':react-native-xfei')
+2.android/app/build.gradle  <br/>
+ `add dependencies {   compile project(':react-native-xfei')`
 
 3.mainActivity add
-@Override protected void onCreate(Bundle savedInstanceState) {   super.onCreate(savedInstanceState);     SpeechUtility.createUtility(this, SpeechConstant.APPID +"=58c77ca8");
-
-mainApplication add new XfeiPackage()}
+@Override protected void onCreate(Bundle savedInstanceState) {   super.onCreate(savedInstanceState);     SpeechUtility.createUtility(this, SpeechConstant.APPID +"=58c77ca8");mainApplication add new XfeiPackage()}
 
 4.react-native-xfei to node_modules
 
