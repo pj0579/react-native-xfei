@@ -15,18 +15,16 @@ project(':react-native-xfei').projectDir = new File(rootProject.projectDir, '../
 3.mainActivity add <br/>
 `@Override protected void onCreate(Bundle savedInstanceState) {   super.onCreate(savedInstanceState);     SpeechUtility.createUtility(this, SpeechConstant.APPID +"=58c77ca8");mainApplication add new XfeiPackage()}`
 
-4. move react-native-xfei to node_modules<br/>
+4.move react-native-xfei to node_modules <br/>
 
-5.js <br/>  
+5.js<br/>  
 `import Xfei from “xxxxx/node_mudles/react-native-Xfei”`
 
-start
-
+start<br/>  
 `Xfei.setParameter("60000", "zh_cn", "10000", "10000", "mandarin", "iat");//setParameter
 Xfei.startRecord((msg) => {       alert(msg);//sucess   },   (mag) => {        alert(mag);   });`
-
-end
-Xfei.stopRecord()
+end<br/>
+`Xfei.stopRecord()`
 
 
 IOS
@@ -41,21 +39,22 @@ add Contacts.framework ,AddressBook.framework`
 `add $(SRCROOT)/../node_modules/react-native-xfei/ios`
 
 3.AppDelegate.m <br/>
-`add #import "RCTXfei.h"
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+` `` add #import "RCTXfei.h"
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions<br/>
 {
 …
 [RCTXfei crateMyUtility:@"58c90a6b"];
 …
-}`
+}
+` `` 
+<br/>
 4.Libraries  add <br/>
 `RCTXfei.xcodeproj ` 
 
 5.TARGETS -Build Phases -Link binary With Libraries<br/>
 `add RCTXfei.a`
-6.js same as Android
-`different
-Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }});`
+6.js same as Android <br/>
+`different Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }});`
 
 
 
