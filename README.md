@@ -54,9 +54,9 @@ add Contacts.framework ,AddressBook.framework`
 ```
 <br/>
 4.Libraries  add <br/>
-`RCTXfei.xcodeproj` <br/>
+`"RCTXfei.xcodeproj"` <br/>
 5.TARGETS -Build Phases -Link binary With Libraries<br/>
-`add RCTXfei.a `<br/>
+`add "RCTXfei.a"`<br/>
 6.js same as Android <br/>
 `different Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }})`
 
