@@ -43,21 +43,21 @@ add Contacts.framework ,AddressBook.framework`
 `add $(SRCROOT)/../node_modules/react-native-xfei/ios`
 
 3.AppDelegate.m <br/>
- add #import "RCTXfei.h"<br/>
-` ``
- - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-…
-[RCTXfei crateMyUtility:@"58c90a6b"];
+`add #import "RCTXfei.h"` <br/>
+```
+(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions<br/>
+{<br/>
+…<br/>
+[RCTXfei crateMyUtility:@"58c90a6b"];<br/>
 …
 }
-` ``
+```
 <br/>
 4.Libraries  add <br/>
 `RCTXfei.xcodeproj` <br/>
 5.TARGETS -Build Phases -Link binary With Libraries<br/>
 
-add RCTXfei.a <br/>
+`add RCTXfei.a `<br/>
 
 6.js same as Android <br/>
 `different Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }})`
