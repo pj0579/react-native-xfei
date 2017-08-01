@@ -54,8 +54,7 @@ add #import "RCTXfei.h"
 ` ``
 <br/>
 4.Libraries  add <br/>
-`RCTXfei.xcodeproj ` 
-
+`RCTXfei.xcodeproj` <br/>
 5.TARGETS -Build Phases -Link binary With Libraries<br/>
 
 `add RCTXfei.a`<br/>
