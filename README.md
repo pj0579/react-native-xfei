@@ -1,4 +1,5 @@
-# react-native-xfei
+react-native-xfei
+====   
 讯飞RN组件 use for android and ios
 Android manually configure(you change the xunfei id，need to use your iflyMSC.sdk）
 
