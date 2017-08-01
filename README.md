@@ -45,31 +45,24 @@ add Contacts.framework ,AddressBook.framework`
 3.AppDelegate.m <br/>
 ` `` 
 add #import "RCTXfei.h"
-` `` 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions<br/>
-` `` 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	` `` 
 …
-` `` 
 [RCTXfei crateMyUtility:@"58c90a6b"];
-` `` 
 …
-` `` 
 }
-` `` 
+` ``
 <br/>
 4.Libraries  add <br/>
 `RCTXfei.xcodeproj ` 
 
 5.TARGETS -Build Phases -Link binary With Libraries<br/>
-` ``
-add RCTXfei.a
-` ``
+
+`add RCTXfei.a`<br/>
+
 6.js same as Android <br/>
-` ``
-different Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }})
-` ``
+`different Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }})`
+
 
 
 
