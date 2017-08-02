@@ -59,7 +59,12 @@ add Contacts.framework ,AddressBook.framework`
 `add RCTXfei.a`<br/>
 6.js same as Android <br/>
 `different` <br/> 
-```Xfei.startRecord((res, isSucess) => {   if(isSucess){      alert(res);   }else{       alert("error");   }})
+```
+Xfei.startRecord((res, isSucess) => 
+{ 
+if(isSucess){      alert(res);   }
+else{       alert("error");  
+ }})
 ```
 
 
