@@ -56,10 +56,8 @@ add Contacts.framework ,AddressBook.framework`
 }
 ```
 <br/>
-4.Libraries  add <br/>
-` RCTXfei.xcodeproj ` <br/>
-5.TARGETS -Build Phases -Link binary With Libraries <br/>
-`add RCTXfei.a`<br/>
+4.Libraries  add RCTXfei.xcodeproj  <br/> <br/>
+5.TARGETS -Build Phases -Link binary With Libraries add RCTXfei.a <br/> <br/>
 6.js same as Android <br/>
 `different` <br/> 
 <pre><code>
