@@ -13,11 +13,11 @@ project(':react-native-xfei').projectDir = new File(rootProject.projectDir, '../
  `add dependencies {   compile project(':react-native-xfei')`
 
 3.mainActivity add <br/>
-` ``
+
+<pre><code>
 @Override protected void onCreate(Bundle savedInstanceState) {   super.onCreate(savedInstanceState);     SpeechUtility.
-` ``
 createUtility(this, SpeechConstant.APPID +"=58c77ca8");mainApplication add new XfeiPackage()}
-` ``
+</code></pre>
 
 4.move react-native-xfei to node_modules <br/>
 
@@ -25,8 +25,10 @@ createUtility(this, SpeechConstant.APPID +"=58c77ca8");mainApplication add new X
 `import Xfei from “xxxxx/node_mudles/react-native-Xfei”`
 
 start<br/>  
-`Xfei.setParameter("60000", "zh_cn", "10000", "10000", "mandarin", "iat");//setParameter
-Xfei.startRecord((msg) => {       alert(msg);//sucess   },   (mag) => {        alert(mag);   });`<br/>
+<pre><code>
+Xfei.setParameter("60000", "zh_cn", "10000", "10000", "mandarin", "iat");//setParameter
+Xfei.startRecord((msg) => { alert(msg);//sucess   },   (mag) => {alert(mag);});
+</code></pre>
 end <br/>
 `Xfei.stopRecord()`
 
@@ -59,13 +61,13 @@ add Contacts.framework ,AddressBook.framework`
 `add RCTXfei.a`<br/>
 6.js same as Android <br/>
 `different` <br/> 
-```
+<pre><code>
 Xfei.startRecord((res, isSucess) => 
 { 
 if(isSucess){      alert(res);   }
 else{       alert("error");  
  }})
-```
+</code></pre>
 
 
 
